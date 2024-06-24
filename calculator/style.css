@@ -1,0 +1,84 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 2px solid #4a90e2; /* Darker blue border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #dcecfb; /* Light blue background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; 
+  }
+  
+  #display {
+    width: calc(100% - 40px); 
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:not(#clear):not(#backspace):not(#divide):not(#multiply):not(#subtract):not(#add):not(#equal) {
+    background-color: #4a90e2; 
+  }
+  
+  #clear,
+  #backspace,
+  #divide,
+  #multiply,
+  #subtract,
+  #add,
+  #equal {
+    background-color: #4a90e2; 
+  }
+  
+  #divide {
+    background-color: #ff6f6f; 
+  }
+  
+  #multiply {
+    background-color: #6fff6f; /* Green for multiply */
+  }
+  
+  #subtract {
+    background-color: #6f6fff; /* Blue for subtract */
+  }
+  
+  #add {
+    background-color: #ffbf6f; /* Orange for add */
+  }
+  
+  #equal {
+    background-color: #ff6fbf; /* Pink for equal */
+  }
+  
+  #clear:hover,
+  #backspace:hover,
+  #divide:hover,
+  #multiply:hover,
+  #subtract:hover,
+  #add:hover,
+  #equal:hover {
+    background-color: #70a8ff; /* Lighter blue on hover */
+  }
+  
